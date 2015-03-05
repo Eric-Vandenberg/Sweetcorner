@@ -1,0 +1,309 @@
+/*************************     Home     *****************************/
+
+
+
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  color: #754b23;
+}
+nav {
+	text-align: right;
+	
+}
+ul {
+	clear: both;
+}
+li, li a, .selected  {
+	display: inline;
+	margin: 1%;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+.clear-float {
+	clear: both;
+}
+.italic-text, #footer-text {
+	text-align: center;
+	font-family: cursive;
+}
+.container {
+	width: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.wrapper {
+	display: inline;
+}
+
+header {
+	height: 200px;
+	display: block;
+	position: relative;
+}
+#top-header {
+	background-image: url('../img/header.png');
+	height: 88px;
+	width: 100%;
+}
+.clear-float {
+	clear: both;
+}
+#logo {
+	background-image: url('../img/logo.png');
+	height: 190px;
+	width: 260px;
+	margin: 0 auto;
+}
+
+#brown-line {
+	height: 24px;
+	width: 100%;
+	background-color: #754b23;
+}
+p {
+	padding: 1%;
+	margin: 1%;
+	text-align: justify;
+}
+
+.body_container {
+	clear: both;
+	width: 100%;
+	margin: 0 auto;
+	position: relative;
+	display: inline-block;
+}
+.text {
+	width: 69%;
+	height: 500px;
+	display: inline-block;
+	
+}
+
+.content-title-editor {
+	padding: 5%;
+	font-weight: bold;
+}
+
+#strips2 {
+	background-image: url('../img/strips2.png');
+	height: 500px;
+	width: 300px;
+	display: inline-block;
+	float: right;
+}
+
+#header-text {
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+
+
+#picture-text {
+	margin-top: 5%;
+}
+.page-picture {
+	margin-top: 1%;
+	margin-bottom: 5%;
+}
+
+.dots-box2-img {
+	display: inline-block;
+	right: 2%;
+	margin-top: 1%;
+	position: absolute;
+}
+#dots {
+	padding: 2% 0px 0px 5%;
+	width: 50px;
+	height: auto;
+}
+#footer-text {
+	max-width: 500px;
+	margin: -4% auto;
+	color: white;
+}
+#phone {
+	float: right;
+	margin: -4% 5% auto;
+}
+
+#foot {
+	position: relative;
+	background-color: #06b4af;
+	height: 80px;
+	display: block;
+}
+
+#phone a {
+	text-decoration: none;
+	color: white;
+	border: #06b4af;
+}
+#phone a:hover {
+	color: #d3d3d3;
+}
+
+/*************************     About Us     *****************************/
+
+.dots-box1-img {
+	display: inline-block;
+}
+
+#strips1 {
+	background-image: url('../img/strips1.png');
+	height: 500px;
+	width: 160px;
+	display: inline-block;
+	float: right;
+	margin-bottom: 5%;
+}
+
+/*************************     Services     *****************************/
+
+
+#strips1_long {
+	background-image: url('../img/strips1.png');
+	height: 800px;
+	width: 160px;
+	display: inline-block;
+	float: right;
+	margin-bottom: 5%;
+}
+
+#center_dots {
+	margin-bottom: 50%;
+}
+
+/*************************     Services     *****************************/
+
+.information {
+	width: 60%;
+	height: 300px;
+	display: inline-block;
+}
+
+/*************************     Contact     *****************************/
+
+
+#form {
+	display: inline-block;
+}
+
+.up_dots {
+	margin-left: 40%;
+}
+
+#schedule {
+	width: 400px;
+}
+
+.day {
+	width: 152px;
+	height: 35px;
+	background-color: #f6ede6;
+	text-align: center;
+	border: 4px solid white;
+}
+.hours {
+	width: 218px;
+	height: 35px;
+	background-color: #f6ede6;
+	text-align: center;
+	border: 4px solid white;
+}
+
+#form {
+	width: 328px;
+	float: right;
+}
+
+input, textarea {
+	width: 310px;
+	margin-bottom: 5%;
+	border-style: none;
+	padding-left: 5%;
+}
+textarea {
+	padding-top: 3%;
+	height: 115px;
+}
+button {
+	width: 155px;
+	height: 35px;
+	margin-bottom: 5%;
+     float: right;
+     border-style: none;
+     color: white;
+}
+input {
+	height: 35px;
+}
+
+table {
+	margin-bottom: 10%;
+	margin-left: 10%;
+}
+
+#formname {
+	background-color: #e86b35;
+}	
+#formemail {
+	background-color: #f6b53e;
+}
+#formphone {
+	background-color: #06b4af;
+}
+#formsubject {
+	background-color: #e86b35;
+}
+#formmessage {
+	background-color: #f6b53e;
+}
+#formsubmit {
+	background-color: #06b4af;
+}
+.right_dots {
+	float: right;
+	position: absolute;
+	right: 30%;
+	bottom: 15%;
+}
+
+h4 {
+	margin-top: 9%;
+}
+
+::-webkit-input-placeholder {
+   color: #754b23;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #754b23;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #754b23;  
+}
+
+:-ms-input-placeholder {  
+   color: #754b23;  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
