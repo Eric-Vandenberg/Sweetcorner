@@ -1,13 +1,15 @@
 var pages={
     Home: 
-        {pageUrl : 'home.html', default:true},
+        {pageUrl : "index.php?pages=home.php",},
     About : 
-        { pageUrl : 'about.html'},
+        { pageUrl : "index.php?pages=about.php"},
     Services : 
-        { pageUrl :'services.html'},
+        { pageUrl :"index.php?pages=services.php"},
     Contact : 
-        { pageUrl : 'contact.html'}
+        { pageUrl : "index.php?pages=contact.php"}
 };
+
+
 
 $("document").ready(function(){
 
@@ -20,8 +22,10 @@ $("document").ready(function(){
             load_page(my_page.pageUrl);
         });
     });*/
-    create_menu();
+    //create_menu();
 });
+
+
 /*<li data-url="home.html"><a >Welcome</a></li>*/
 function create_menu(){
     var main_nav_ul = $("#menu ul");
@@ -40,13 +44,15 @@ function create_menu(){
         //a.appendTo(li);
         main_nav_ul.append(li);
         if(pages[index].default==true){
-            load_page(pages[index].pageUrl);
+            //load_page(pages[index].pageUrl);
         }
     }
 }
 
 
 function load_page(page_url){
+    window.location=page_url;
+    return;//temporarily disable this function
     //load the indicated page into the #main_content section
     $.get(page_url,function(data){
         $("#body").html(data);

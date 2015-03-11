@@ -1,4 +1,20 @@
-<!DOCTYPE html>
+<?php 
+
+//This is the new datastructure that mirrors this javascript object in php
+$pages = [
+  'Home'=>['pageUrl'=>'home.php', 'default'=>TRUE],
+  'About'=> ['pageUrl'=>'about.php'],
+  'Services'=>['pageUrl'=>'services.php'],
+  'Contact'=>['pageUrl'=>'contact.php']
+];
+if(!isset($_GET['page'])) {
+  $_GET['page'] = 'home.php';
+}
+
+
+
+
+?><!DOCTYPE html>
   <html lang="en">
       <head>
           <meta charset="utf-8">
@@ -19,30 +35,24 @@
       </head>
       <body>
         <div class="container">
-          <header class="wrapper">
-            <div id="top-header"></div>
-            <nav id="menu">
-                <ul>
-                  
-                </ul>
-            </nav>
-            <div class="clear-float"></div>
-            <div id="logo"></div>
-            <div class="italic-text" id="header-text">
-              We deliver cupcakes for the important events in your life!
-            </div>
-          </header>
+          <?php 
+            include('includes/header.php');
+          ?>
           <div class="wrapper" id="body">
-            
+          <?php 
+          if(file_exists($_GET['page'])) 
+          {
+            include($_GET['page']);
+          } 
+          else 
+          {
+            include('404.php');
+          }
+          ?>
           </div>
-          
- 
-          <footer class="wrapper" id="foot">
-            <div id="dots"><img src="img/dots-footer.png"></div>
-            <div id="phone"><a href="tel:18002642099"><img src="img/phone.png"> 800 264 2099</a></div>
-            <div id="footer-text">Copyright &copy; 2015 Sweet Corner. All Rights Reserved.</div>
-          </footer>
-
+          <?php
+            include('includes/footer.php');
+          ?>
         </div>
         <script type="text/javascript" src="js/myscript.js"></script>
       </body>    
